@@ -1,18 +1,30 @@
+'use client'
 import { Box } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import LayoutHeader from './LayoutHeader'
-import LayoutFooter from './LayoutFooter'
+import LayoutContainer from './LayoutContainer'
+import LayoutSideNav from './LayoutSideNav'
+
 
 function Layout({ children }: { children: React.ReactNode }) {
+    const [ open , setOpen] = useState(true)
+
     return (
         <Box component="main"
             sx={{
-                height: '100vh'
+                height: '100vh',
+                display: 'flex',
+                flexDirection: "column",
             }}
         >
             <LayoutHeader />
-            {children}
-            <LayoutFooter />
+            <LayoutSideNav
+                onClose={() => { setOpen(false) }}
+                open={open}
+            />
+            <LayoutContainer>
+                {children}
+            </LayoutContainer>
         </Box>
     )
 }
