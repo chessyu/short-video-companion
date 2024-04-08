@@ -1,9 +1,8 @@
-import React from 'react'
+import { TextField } from "@mui/material";
+import React from "react";
 
 function PricePage() {
-  return (
-    <div>PricePage</div>
-  )
+  return <div></div>;
 }
 
-export default PricePage
+export default PricePage;

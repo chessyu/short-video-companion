@@ -1,6 +1,25 @@
 {
-    "Index": {
-      "title": "欢迎来到这里"
-    }
-  }
-  
+  "Translate": "Translate",
+  "ChangeTheme": "Change theme",
+  "Login": "Login",
+  "DefaultTile": "Prompt",
+  "OkButton": "Ok",
+  "CloseButton": "Close",
+  "UserName": "User name",
+  "Password": "Password",
+  "PasswordRepeat": "Password repeat",
+  "PlaceholderText": "Enter {text}",
+  "PlaceholderAgainText": "Enter {text} Again",
+  "AccountLogin": "Account login",
+  "Remember": "Remember password",
+  "RequiredField": "{field} is required",
+  "EnteredPasswordsDiffer": "Entered passwords differ!",
+  "LeastDigits": "Input at least 8 digits",
+  "NewUser": "New user?",
+  "CreateAnAccount": "Create an account",
+  "ForgotPassword": "Forgot password?",
+  "Back": "Back",
+  "Home": "Home",
+  "Price": "Price",
+  "Producs": "Producs"
+}

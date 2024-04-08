@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function WorkspacePage() {
-  return (
-    <div>WorkspacePage</div>
-  )
+function index() {
+  return <div>(workspace)</div>;
 }
 
-export default WorkspacePage
+export default index;

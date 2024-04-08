@@ -1,3 +1,5 @@
+'use client';
+
 import { useMediaQuery, useTheme } from "@mui/material";
 
 export const useMediaValue = () => {
@@ -8,7 +10,7 @@ export const useMediaValue = () => {
     const xl = useMediaQuery(theme.breakpoints.up('xl')); // 1536px
 
     return {
-        currentMedia:{
+        currentMedia: {
             sm,
             md,
             lg,

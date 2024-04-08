@@ -1,6 +1,25 @@
 {
-    "Index": {
-      "title": "Hello world!"
-    }
-  }
-  
+  "Translate": "翻译",
+  "ChangeTheme": "主题切换",
+  "Login": "登录",
+  "DefaultTile": "提示",
+  "OkButton": "确认",
+  "CloseButton": "取消",
+  "UserName": "账号",
+  "Password": "密码",
+  "PasswordRepeat": "重复密码",
+  "PlaceholderText": "请输入{text}",
+  "PlaceholderAgainText": "请再次输入{text}",
+  "AccountLogin": "账号登录",
+  "Remember": "记住账号",
+  "RequiredField": "{field}是必填项",
+  "EnteredPasswordsDiffer": "两次输入的密码不一致",
+  "LeastDigits": "最少输入8位",
+  "NewUser": "新用户?",
+  "CreateAnAccount": "创建账户",
+  "ForgotPassword": "忘记密码?",
+  "Back": "返回",
+  "Home": "首页",
+  "Price": "价格",
+  "Producs": "产品"
+}
