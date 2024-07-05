@@ -26,7 +26,8 @@
       "@provider/*": ["./app/provider"],
       "@atoms/*": ["./app/atoms"],
       "@i18n/*": ["./app/i18n"]
-    }
+    },
+    "types": ["@cloudflare/workers-types/2023-07-01"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

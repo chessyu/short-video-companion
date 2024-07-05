@@ -8,7 +8,6 @@ function Layout({ children }: { children: React.ReactNode }) {
     <Box
       component="main"
       sx={{
-        height: "100vh",
         display: "flex",
         flexDirection: "column",
         bgcolor: "background.default",

@@ -8,7 +8,7 @@ import { useTranslations } from "use-intl";
 function ToggleThemeButton() {
   const { mode, setMode } = useColorScheme();
   const t = useTranslations();
-  console.log("RRRRR", mode);
+
   return (
     <Tooltip title={t("ChangeTheme")}>
       <IconButton onClick={() => setMode(mode === "light" ? "dark" : "light")}>

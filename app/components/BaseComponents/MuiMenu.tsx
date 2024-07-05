@@ -30,7 +30,6 @@ export type MuiMenuPropsType = {
 function MuiMenu(props: MuiMenuPropsType) {
   const { router, mode = "horizontal", stackProps } = props;
   const MODE = mode === "horizontal";
-  const t = useTranslations();
 
   return (
     <Stack

@@ -6,7 +6,11 @@
     "dev": "next dev -p 5200",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev",
+    "deploy": "npm run pages:build && wrangler pages deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -28,6 +32,8 @@
     "react-hook-form-mui": "^7.0.0-beta.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.11.3",
+    "@cloudflare/workers-types": "^4.20240524.0",
     "@heroicons/react": "^2.1.1",
     "@swc-jotai/react-refresh": "^0.1.0",
     "@types/js-cookie": "^3.0.6",
@@ -42,6 +48,8 @@
     "postcss": "^8",
     "simplebar-react": "^3.2.4",
     "typescript": "^5",
-    "vitest": "^1.3.1"
+    "vitest": "^1.3.1",
+    "vercel": "^34.2.3",
+    "wrangler": "^3.57.2"
   }
 }

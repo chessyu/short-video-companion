@@ -1,19 +1,19 @@
 "use client";
 import { useLoginAtom } from "@/app/atoms/login";
-import { Button } from "@mui/material";
+import { Button, ButtonBaseOwnProps } from "@mui/material";
 import React from "react";
 import { useTranslations } from "use-intl";
 
-function LoginButton() {
+function LoginButton(props: ButtonBaseOwnProps) {
   const t = useTranslations();
   const { setShowLogin } = useLoginAtom();
 
   return (
     <Button
-      variant="outlined"
+      variant="text"
       color="primary"
-      size="small"
       onClick={() => setShowLogin(true)}
+      {...props}
     >
       {t("Login")}
     </Button>

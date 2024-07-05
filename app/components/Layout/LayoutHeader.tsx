@@ -6,7 +6,9 @@ import { LogoIcon } from "../SvgIcon";
 import ToggleThemeButton from "../ClientComponent/Button/ToggleThemeButton";
 import LoginButton from "../Login/LoginButton";
 import TranslateButton from "../ClientComponent/Button/TranslateButton";
-import MuiMenu from "../BaseComponents/MuiMenu";
+import MenuToggleButton, {
+  MenuBaseComponent,
+} from "../ClientComponent/Button/MenuToggleButton";
 
 function LayoutHeader() {
   return (
@@ -21,7 +23,7 @@ function LayoutHeader() {
         zIndex: 1,
       }}
     >
-      <Container component="div" maxWidth="lg">
+      <Container component="div" maxWidth="xl">
         <Stack
           alignItems="center"
           direction="row"
@@ -39,30 +41,14 @@ function LayoutHeader() {
             </IconButton>
           </Stack>
           <Stack alignItems="center" direction="row" spacing={4}>
-            <MuiMenu
-              router={[
-                {
-                  href: "/",
-                  label: "Home",
-                },
-                {
-                  href: "/price",
-                  label: "Price",
-                },
-                {
-                  popover: true,
-                  label: "Producs",
-                  popoverChildren: (
-                    <Stack direction="row" spacing={2}>
-                      完善中...
-                    </Stack>
-                  ),
-                },
-              ]}
-            />
+            <Stack sx={{ display: { xs: "none", md: "block" } }}>
+              <MenuBaseComponent />
+            </Stack>
+
             <TranslateButton />
             <ToggleThemeButton />
-            <LoginButton />
+            <LoginButton sx={{ display: { xs: "none", md: "block" } }} />
+            <MenuToggleButton sx={{ display: { xs: "block", md: "none" } }} />
           </Stack>
         </Stack>
       </Container>
