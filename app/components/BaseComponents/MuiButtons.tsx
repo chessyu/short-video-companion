@@ -6,6 +6,7 @@ import {
   IconButton,
   IconButtonOwnProps,
 } from "@mui/material";
+import { omit } from "ramda";
 
 export type MuiButtonsProps = ButtonBaseOwnProps &
   ButtonProps &
@@ -21,7 +22,7 @@ function MuiButtons(props: MuiButtonsProps) {
     return <LoadingButton {...props} />;
   }
   if (typeof iconOnly === "boolean") {
-    return <IconButton {...props} />;
+    return <IconButton {...omit(["iconOnly"], props)} />;
   }
   return <Button {...props} />;
 }

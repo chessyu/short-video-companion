@@ -1,7 +1,7 @@
-import { Box, Container } from "@mui/material";
-import React from "react";
+import { Box } from "@mui/material";
+import React, { PropsWithChildren } from "react";
 
-function LayoutContainer({ children }: { children: React.ReactNode }) {
+function LayoutContainer({ children }: PropsWithChildren) {
   return (
     <Box
       component="main"

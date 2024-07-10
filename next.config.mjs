@@ -1,5 +1,5 @@
 import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
-import withNextIntlPlugin from 'next-intl/plugin'
+import createNextIntlPlugin from 'next-intl/plugin'
 
 // Here we use the @cloudflare/next-on-pages next-dev module to allow us to use bindings during local development
 // (when running the application with `next dev`), for more information see:
@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'development') {
     await setupDevPlatform();
 }
 
-const withNextIntl = withNextIntlPlugin('./i18n/i18n.ts');
+const withNextIntl = createNextIntlPlugin('./i18n/i18n.ts');
 
 /** @type {import('next').NextConfig} */
 

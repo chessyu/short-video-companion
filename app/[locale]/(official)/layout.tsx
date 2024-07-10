@@ -1,7 +1,7 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import Layout from "@/app/components/Layout/Layout";
 
-function OfficialLayout({ children }: { children: React.ReactNode }) {
+function OfficialLayout({ children }: PropsWithChildren) {
   return <Layout>{children}</Layout>;
 }
 

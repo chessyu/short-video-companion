@@ -28,19 +28,22 @@ function LayoutHeader() {
           alignItems="center"
           direction="row"
           justifyContent="space-between"
-          spacing={2}
           sx={{
             minHeight: TOP_NAV_HEIGHT,
           }}
         >
-          <Stack alignItems="center" direction="row" spacing={2}>
+          <Stack alignItems="center" direction="row">
             <IconButton disableRipple>
               <SvgIcon fontSize="large">
                 <LogoIcon />
               </SvgIcon>
             </IconButton>
           </Stack>
-          <Stack alignItems="center" direction="row" spacing={4}>
+          <Stack
+            alignItems="center"
+            direction="row"
+            sx={{ gap: { xs: 1, sm: 2 } }}
+          >
             <Stack sx={{ display: { xs: "none", md: "block" } }}>
               <MenuBaseComponent />
             </Stack>

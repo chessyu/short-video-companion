@@ -1,11 +1,11 @@
-import { Box } from "@mui/material";
-import React from "react";
+import { Stack } from "@mui/material";
+import React, { PropsWithChildren } from "react";
 import LayoutHeader from "./LayoutHeader";
 import LayoutContainer from "./LayoutContainer";
 
-function Layout({ children }: { children: React.ReactNode }) {
+function Layout({ children }: PropsWithChildren) {
   return (
-    <Box
+    <Stack
       component="main"
       sx={{
         display: "flex",
@@ -16,7 +16,7 @@ function Layout({ children }: { children: React.ReactNode }) {
     >
       <LayoutHeader />
       <LayoutContainer>{children}</LayoutContainer>
-    </Box>
+    </Stack>
   );
 }
 
